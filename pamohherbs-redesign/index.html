@@ -12,18 +12,83 @@
     <!-- Stylesheets -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">   
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 </head>
 
-<body>
-<h1>Testing!</h1>
+<body style="font-family: 'Poppins', sans-serif;">
+    <!-- Header -->
+    <header class="container">
+        <div class="logo">
+            <a href="index.html"><img src="images/sitelogo.png"></a>
+        </div>
+        <div id="nav-lg">
+            <nav>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="mission-vision.html">Mission and Vision</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="nav-sm">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                      <a href="about.html"><li>About Us</li></a>
+                      <a href="mission-vision.html"><li>Mission and Vision</li></a>
+                      <a href="#"><li>Shop</li></a>
+                      <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                  </div>
+            </nav>
+        </div>
+    </header>
+
+     <!-- Section 1: Jumbotron -->
+     <section class="container-fluid jumbotron" id="homepage-jumbotron">
+        <div class="container">
+            <!-- Title -->
+            <div class="row">
+                <h1 class="animate__animated animate__fadeInUp">Where organic health is born.</h1>
+            </div>
+            <!-- Subtitle -->
+            <div class="row">
+                <h1 class="animate__animated animate__fadeInRight">Live Green. Live Life.</h1>
+            </div>
+            <!--Call to Action-->
+            <div class="row">
+                <a href="contact.html" class="button animate__animated animate__fadeInDown">CHOOSE PLAN</a>
+            </div>
+        </div>
+    </section>
     
+    <!-- Section 2: Our Product Line -->
+    <section class="container-fluid jumbotron" id="product-line">
+        <div class="container">
+            <!-- Title -->
+            <div class="row">
+                <h1 class="animate__animated animate__fadeInUp">Where organic health is born.</h1>
+            </div>
+            <!-- Subtitle -->
+            <div class="row">
+                <h1 class="animate__animated animate__fadeInRight">Live Green. Live Life.</h1>
+            </div>
+            <!--Call to Action-->
+            <div class="row">
+                <a href="contact.html" class="button animate__animated animate__fadeInDown">CHOOSE PLAN</a>
+            </div>
+        </div>
+    </section>
 </body>
 
 
