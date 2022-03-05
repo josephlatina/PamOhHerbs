@@ -96,6 +96,7 @@ header li {
     color: white;
     display: inline; 
     padding: 20px;
+    font-size: 120%;
 }
 li {
     list-style: none;
@@ -126,6 +127,9 @@ h1 {
 section {
     margin-bottom: 110px;
 }
+p {
+    font-size: 120%;
+}
 .button {
     font-size: 100%;
     width: 200px;
@@ -150,6 +154,21 @@ section {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+.footer-content {
+    text-align: center;
+    background-color: #0f0f0f;
+    height: 270px;
+    color: white;
+}
+.footer-content a:hover {
+    color: #304C34;
+}
+.footer-content small {
+    font-size: 75%;
+}
+.footer-content div {
+    margin-bottom: 10px;
 }
 .jumbotron {
     background-size: cover;
@@ -309,12 +328,13 @@ section {
 #homepage-jumbotron {
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/jumbotron-1.jpg");
     background-size: cover;
-    height: 1200px;
+    height: 1500px;
 }
 
 #homepage-about {
     object-fit: cover;
     text-align: left;
+    min-height: 700px;
 }
 
 #product-line {
@@ -338,8 +358,8 @@ section {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 25px;
+    font-weight: 600;
     transition: 0.4s;
 }
 .panel {
