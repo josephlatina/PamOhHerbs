@@ -73,22 +73,79 @@
     </section>
     
     <!-- Section 2: Our Product Line -->
-    <section class="container-fluid jumbotron" id="product-line">
-        <div class="container">
-            <!-- Title -->
-            <div class="row">
-                <h1 class="animate__animated animate__fadeInUp">Where organic health is born.</h1>
-            </div>
-            <!-- Subtitle -->
-            <div class="row">
-                <h1 class="animate__animated animate__fadeInRight">Live Green. Live Life.</h1>
-            </div>
-            <!--Call to Action-->
-            <div class="row">
-                <a href="contact.html" class="button animate__animated animate__fadeInDown">CHOOSE PLAN</a>
-            </div>
+    <section class="container" id="product-line">
+        <div class="row center">
+            <section class="col-8">
+                <h1>Our Product Line</h1>
+                <p>We offer a combination of herbal products including traditionally used medicinal herbal infusions and teas, nutraceuticals, organic skincare oil blends
+                    and effective botanical personal hygiene products</p>
+            </section>
+        </div>
+        <div class="row">
+            <!-- Organic Medical Teas -->
+            <section class="col-sm-12 col-lg-4">
+                <div class="center">
+                    <div class="product-icon">
+                        <img src="images/coffee.png">
+                    </div>
+                    <h5>Organic Medicinal Teas</h5>
+                </div>
+            </section>
+            <!-- Nutraceuticals -->
+            <section class="col-sm-12 col-lg-4">
+                <div class="center">
+                    <div class="product-icon">
+                        <img src="images/pills.png">
+                    </div>
+                    <h5>Nutraceuticals</h5>
+                </div>
+            </section>
+            <!-- Skincare and Hygenic Products -->
+            <section class="col-sm-12 col-lg-4">
+                <div class="center">
+                    <div class="product-icon">
+                        <img src="images/skincare.png">
+                    </div>
+                    <h5>Skincare and Hygenic Products</h5>
+                </div>
+            </section>
         </div>
     </section>
+
+    <!-- Section 3: About Us -->
+    <section class="container-fluid" id="homepage-about">
+        <div class="row">
+            <section class="col-6">
+                <img class="col-12" id="homepage-about-img" src="images/homepage.jpeg">
+            </section>
+            <section class="col-6 center" id="homepage-about-description">
+                <div class="col-sm-10 col-xl-8 center">
+                    <h1>About Us</h1>
+                    <p>At Pam Oh Herbs, we are all about improving quality of lives, growing awareness in communities we serve, and improving the efficiency of traditional herbal remedies with our  organic medicinal teas and skincare products.
+                        <br><br>
+                        We provide you the tools and knowledge in perfecting a healthier, more beautiful you while protecting our planet’s resources.
+                        <br><br>
+                        While gentle on the environment, Pam Oh Herbs organic ingredients can be easily sourced back to their ethical and natural origins. 
+                        That’s our promise to you.
+                    </p>
+                    <a href="about.html" class="button">LEARN MORE</a>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Section 4: -->
+
+    <!-- Script for adjusting the about us section height with respect to image size -->
+    <script>
+        changeheight();
+        window.addEventListener('resize', changeheight);
+        function changeheight() {
+            const img = document.querySelector("#homepage-about-img")
+            const description = document.querySelector("#homepage-about-description")
+            description.style.height = img.height + "px";
+        }
+    </script>
 </body>
 
 

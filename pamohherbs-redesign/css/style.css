@@ -119,6 +119,10 @@ nav {
 }
 
 /*+++++++++++++++++++ GLOBAL STYLES +++++++++++++++++++ */
+h1 {
+    color:#304C34;
+    text-align: center;
+}
 section {
     margin-bottom: 50px;
 }
@@ -138,6 +142,13 @@ section {
     color: black;
     transition-duration: 0.8s;
     transition-timing-function: ease;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .jumbotron {
     background-size: cover;
@@ -289,4 +300,38 @@ section {
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/jumbotron-1.jpg");
     background-size: cover;
     height: 1200px;
+}
+
+#homepage-about {
+    object-fit: cover;
+    text-align: left;
+}
+
+#product-line {
+    min-height: 600px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-icon {
+    border-radius: 100px;
+    border: 4px solid #304C34;
+    background-color: #304C34;
+    height: 100px;
+    width: 100px;
+    padding: 12px;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-icon img {
+    height: 45px;
+    width: 45px;
 }
