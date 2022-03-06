@@ -409,3 +409,50 @@ p {
     height: 45px;
     width: 45px;
 }
+
+/*+++++++++++++++++++ MISSION AND VISION +++++++++++++++++++ */
+#mission-vision-jumbotron {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/mission-vision-jumbotron.jpg");
+  background-size: cover;
+  height: 800px;
+}
+
+#mission-vision-jumbotron h1 {
+  font-size: 400%;
+}
+
+.mission-sections {
+  height: 500px;
+}
+
+/*+++++++++++++++++++ CONTACT +++++++++++++++++++ */
+input, textarea {
+  height: 35px;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 90%;
+  border: 1px solid lightgrey;
+}
+
+textarea {
+  height: 150px;
+  margin-bottom: 20px;
+}
+#contact-button {
+  margin: 0;
+}
+#contact-jumbotron {
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/contact.jpg");
+  background-size: cover;
+  height: 800px;
+}
+#contact-jumbotron h1 {
+  font-size: 400%;
+}
+#contact-jumbotron h5 {
+  color: white;
+}
+.inline {
+  display: flex;
+  flex: row;
+}
