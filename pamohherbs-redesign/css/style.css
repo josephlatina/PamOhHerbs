@@ -68,6 +68,16 @@ html {
     }
   }
   
+  /*+++++++++++++++++++ MEDIA QUERY FOR X-LARGE +++++++++++++++++++ */
+  
+  @media only screen and (min-width: 1200px){
+    #nav-lg {
+      display: block;
+    }
+    #comparison-right {
+        padding-left: 100px;
+    }
+  }
   /*+++++++++++++++++++ ANIMATION +++++++++++++++++++ */
   
   .animate__animated.animate__fadeInRight {
@@ -486,7 +496,7 @@ textarea {
 }
 .inline-comparison {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row; */
     justify-content: space-around;
 }
 .comparison-text {
@@ -501,3 +511,4 @@ textarea {
     padding: 10px;
     margin: 50px;
 }
+
