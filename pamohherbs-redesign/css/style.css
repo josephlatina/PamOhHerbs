@@ -451,5 +451,17 @@ textarea {
 }
 .inline {
   display: flex;
-  flex: row;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*+++++++++++++++++++ ABOUT US +++++++++++++++++++ */
+#aboutUs-jumbotron {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/aboutus.jpg") ;
+}
+#aboutUs-jumbotron h1 {
+  font-size: 400%;
+}
+#aboutUs-jumbotron h5 {
+  color: white;
 }
