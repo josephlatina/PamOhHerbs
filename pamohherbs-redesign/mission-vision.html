@@ -145,6 +145,17 @@
         </div>
     </footer>
 
+    <!-- Script for adjusting the about us section height with respect to image size -->
+    <script>
+        changeheight();
+        window.addEventListener('resize', changeheight);
+        function changeheight() {
+            const img = document.querySelector("#homepage-about-img")
+            const description = document.querySelector("#homepage-about-description")
+            description.style.height = img.height + "px";
+        }
+    </script>
+
 </body>
 
 
