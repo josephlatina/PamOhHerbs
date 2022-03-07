@@ -21,6 +21,18 @@
 </head>
 
 <body style="font-family: 'Marcellus', serif;">
+
+    <!-- Script for adjusting the about us section height with respect to image size -->
+    <script>
+        changeheight();
+        window.addEventListener('resize', changeheight);
+        function changeheight() {
+            const img = document.querySelector("#mission-vision-image")
+            const description = document.querySelector("#mission-vision-description")
+            description.style.height = img.height + "px";
+        }
+    </script>
+
     <!-- Header -->
     <header class="container">
         <div class="logo">
@@ -68,9 +80,9 @@
     <section class="container center" id="homepage-about">
         <div class="row">
             <section class="col-6">
-                <img class="col-12" id="homepage-about-img" src="images/plant.jpg">
+                <img class="col-12" id="mission-vision-image" src="images/plant.jpg">
             </section>
-            <section class="col-6 center" id="homepage-about-description">
+            <section class="col-6" id="mission-vision-description">
                 <div class="col-sm-12 col-xl-10 center">
                     <p>It’s always amazing to see what plants can do. To have the power in our hands coupled with an inspiration of the transformation 
                         that happens after use. At Pam Oh Herbs, we are all about natural and organic medicinal teas and skincare products and about changing lives, 
@@ -89,7 +101,7 @@
     <!-- Section 4: Mission -->
     <section class="container mission-sections center">
         <div class="row">
-            <section class="col-6 center" id="homepage-about-description">
+            <section class="col-6 center">
                 <div class="col-sm-12 col-xl-10 center">
                     <div>
                         <h1>Mission</h1>
@@ -111,7 +123,7 @@
             <section class="col-6">
                 <img class="col-12" src="images/vision.jpg">
             </section>
-            <section class="col-6 center" id="homepage-about-description">
+            <section class="col-6 center">
                 <div class="col-sm-12 col-xl-10 center">
                     <div>
                         <h1>Vision</h1>
@@ -144,17 +156,6 @@
             <small>All Rights Reserved. © Pam Oh Herbs.</small>
         </div>
     </footer>
-
-    <!-- Script for adjusting the about us section height with respect to image size -->
-    <script>
-        changeheight();
-        window.addEventListener('resize', changeheight);
-        function changeheight() {
-            const img = document.querySelector("#homepage-about-img")
-            const description = document.querySelector("#homepage-about-description")
-            description.style.height = img.height + "px";
-        }
-    </script>
 
 </body>
 
