@@ -31,23 +31,6 @@
             description.style.height = img.height + "px";
         }
     </script>
-    <!-- Script for frequently asked questions -->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
     <!-- Header -->
     <header class="container">
         <div class="logo">
@@ -255,6 +238,24 @@
             <small>All Rights Reserved. © Pam Oh Herbs.</small>
         </div>
     </footer>
+
+    <!-- Script for frequently asked questions -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
 
 </body>
 
