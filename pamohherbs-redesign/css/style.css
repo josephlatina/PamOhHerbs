@@ -418,6 +418,10 @@ section {
   font-size: 400%;
 }
 
+#mission-vision-description div {
+  margin: 0 auto;
+}
+
 .mission-sections {
   height: 500px;
 }
@@ -466,6 +470,10 @@ textarea {
 #aboutUs-productDescription p{
     text-align: center;
 }
+/* #comparison-sections {
+  margin-left: 10px;
+  margin-right: 10px;
+} */
 
 /* #aboutUs-comparison h3{
     text-align: center;

@@ -21,6 +21,33 @@
 </head>
 
 <body style="font-family: 'Marcellus', serif;">
+    <!-- Script for adjusting the about us section height with respect to image size -->
+    <script>
+        changeheight();
+        window.addEventListener('resize', changeheight);
+        function changeheight() {
+            const img = document.querySelector("#homepage-about-img")
+            const description = document.querySelector("#homepage-about-description")
+            description.style.height = img.height + "px";
+        }
+    </script>
+    <!-- Script for frequently asked questions -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
     <!-- Header -->
     <header class="container">
         <div class="logo">
@@ -229,33 +256,6 @@
         </div>
     </footer>
 
-    <!-- Script for adjusting the about us section height with respect to image size -->
-    <script>
-        changeheight();
-        window.addEventListener('resize', changeheight);
-        function changeheight() {
-            const img = document.querySelector("#homepage-about-img")
-            const description = document.querySelector("#homepage-about-description")
-            description.style.height = img.height + "px";
-        }
-    </script>
-    <!-- Script for frequently asked questions -->
-    <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-        
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
-        }
-        </script>
 </body>
 
 
