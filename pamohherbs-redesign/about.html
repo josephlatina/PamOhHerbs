@@ -16,31 +16,53 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css">
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
-    <!--navbar-->
-    <nav>
-        <!--Logo placement-->
-        <div id="logo">
+<body style="font-family: 'Marcellus', serif;">
+    <header class="container">
+        <div class="logo">
+            <a href="./index.html"><img src="./images/sitelogo.png" alt="pam oh herbs logo"></a>
+        </div>
+        <div id="nav-lg">
+            <!--navbar large-->
+            <nav>
+                <ul>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./mission-vision.html">Mission and Vision</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="nav-sm">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div id="menuToggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="about.html"><li>About Us</li></a>
+                        <a href="mission-vision.html"><li>Mission and Vision</li></a>
+                        <a href="#"><li>Shop</li></a>
+                        <a href="contact.html"><li>Contact</li></a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-        </div>
-        <!--Navbar links placement-->
-        <div>
-            <a class="navbar-link" href="">About Us</a>
-            <a class="navbar-link" href="">Mission and Vision</a>
-            <a class="navbar-link" href="">Shop</a>
-            <a class="navbar-link" href="">Contact</a>
-            <!--TODO-->
-            <!-- Add profile system -->
-        </div>
-    </nav>
     <!--Jumbotron-->
-    <section class="container-fluid">
-
+    <section class="container-fluid jumbotron" id="aboutUs-jumbotron">
+        <div class="container">
+            <!--Title-->
+            <div class="row">
+                <h1 class="animate__animated animate__fadeInUp">About Us</h1>
+            </div>
+        </div>
     </section>
     <!-- Description of Products-->
-    <section>
+    <section class="container">
         <div>
             <h2> Home of Medicinal organic herbs, oils and body butters</h2>  
         </div>
