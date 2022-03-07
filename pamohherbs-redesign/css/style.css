@@ -460,11 +460,41 @@ textarea {
 
 /*+++++++++++++++++++ ABOUT US +++++++++++++++++++ */
 #aboutUs-jumbotron {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/aboutus.jpg") ;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/aboutus.jpg");
+  background-size: cover;
+  height: 800px;
 }
 #aboutUs-jumbotron h1 {
   font-size: 400%;
 }
-#aboutUs-jumbotron h5 {
-  color: white;
+
+#aboutUs-productDescription p{
+    text-align: center;
+}
+
+/* #aboutUs-comparison h3{
+    text-align: center;
+} */
+.inline-paragraph {
+    /* margin-top: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.inline-comparison {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.comparison-text {
+    display: flex;
+    flex-direction: row;
+}
+.comparison-text img {
+    height: 20px;
+    width: 20px;
+}
+.comaprison-block {
+    padding: 10px;
+    margin: 50px;
 }
