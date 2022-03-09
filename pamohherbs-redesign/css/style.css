@@ -42,12 +42,16 @@ html {
     header .inner {
       display: none;
     }
+    section {
+      margin-bottom: 50px;
+  }
     #nav-sm {
       display: block;
     }
     .navbar {
         height: 0;
         margin-top: -20px;
+        margin-right: 30px;
     }
     .navbar ul {
         list-style-type: none;
@@ -63,8 +67,17 @@ html {
   /*+++++++++++++++++++ MEDIA QUERY FOR LARGE +++++++++++++++++++ */
   
   @media only screen and (min-width: 992px){
+    section {
+      margin-bottom: 110px;
+  }
+    #mission-vision-statement {
+      height: 1000px;
+    }
     #nav-lg {
       display: block;
+    }
+    .mission-sections {
+      height: 500px;
     }
   }
   
@@ -76,6 +89,9 @@ html {
     }
     #comparison-right {
         padding-left: 100px;
+    }
+    .mission-sections {
+      height: 1200px;
     }
   }
   /*+++++++++++++++++++ ANIMATION +++++++++++++++++++ */
@@ -133,9 +149,6 @@ nav {
 h1 {
     color:#304C34;
     text-align: center;
-}
-section {
-    margin-bottom: 110px;
 }
 .button {
     font-size: 100%;
@@ -419,7 +432,7 @@ section {
 
 /*+++++++++++++++++++ MISSION AND VISION +++++++++++++++++++ */
 #mission-vision-jumbotron {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/mission-vision-jumbotron.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/header-3.jpeg");
   background-size: cover;
   height: 800px;
 }
@@ -430,10 +443,6 @@ section {
 
 #mission-vision-description div {
   margin: 0 auto;
-}
-
-.mission-sections {
-  height: 500px;
 }
 
 /*+++++++++++++++++++ CONTACT +++++++++++++++++++ */
@@ -453,7 +462,7 @@ textarea {
   margin: 0;
 }
 #contact-jumbotron {
-  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/contact.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/header-2.jpeg");
   background-size: cover;
   height: 800px;
 }
@@ -469,7 +478,7 @@ textarea {
 
 /*+++++++++++++++++++ ABOUT US +++++++++++++++++++ */
 #aboutUs-jumbotron {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/aboutus.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/header-1.png");
   background-size: cover;
   height: 800px;
 }
