@@ -48,6 +48,16 @@ html {
     #nav-sm {
       display: block;
     }
+    .carousel {
+      position: relative;
+      height: 600px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 150px;
+    }
+    .mission-sections {
+      height: 500px;
+    }
     .navbar {
         height: 0;
         margin-top: -20px;
@@ -61,6 +71,9 @@ html {
         justify-content: center;
         align-items: center;
         text-align: center;
+      }
+      .testimonial-statement {
+        height: 20px;
       }
   }
   
@@ -76,8 +89,15 @@ html {
     #nav-lg {
       display: block;
     }
+    .carousel {
+      position: relative;
+      height: 600px;
+      width: 50%;
+      margin: 0 auto;
+      margin-bottom: 150px;
+    }
     .mission-sections {
-      height: 500px;
+      height: 1200px;
     }
   }
   
@@ -90,9 +110,7 @@ html {
     #comparison-right {
         padding-left: 100px;
     }
-    .mission-sections {
-      height: 1200px;
-    }
+  
   }
   /*+++++++++++++++++++ ANIMATION +++++++++++++++++++ */
   
@@ -335,6 +353,89 @@ h1 {
   transform: none;
 }
 
+/*+++++++++++++++++++ CAROUSEL +++++++++++++++++++ */
+
+.carousel__image {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  color: #5c7c4c;
+}
+
+.carousel__track-container {
+  border: 10px solid #304C34;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  height: 100%;
+  transition: transform 250ms ease-in;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button--left {
+  left: -40px;
+}
+
+.carousel__button--right {
+  right: -40px;
+}
+
+.carousel__button img {
+  width: 20px;
+}
+
+.carousel__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #5c7c4c;
+  margin: 0 12px;
+  margin-bottom: -50px;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background: #023a15;
+}
+
+.is-hidden {
+  display: none;
+}
+
+
 /*+++++++++++++++++++ HOMEPAGE +++++++++++++++++++ */
 
 #call-to-action {
@@ -344,6 +445,7 @@ h1 {
     height: 500px;
     text-align: center;
     color: black;
+    margin-bottom: 200px;
 }
 #homepage-jumbotron {
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5) ), url("../images/jumbotron-1.jpg");
@@ -364,6 +466,20 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#testimonial {
+  position: absolute;
+  top: -100px;
+  left: 50px;
+  z-index: 20;
+  width: 150px;
+  height: 150px;
+  background-color: #5A823A;
+  border-color: #5A823A;
+}
+#testimonial img {
+  width: 80px;
+  height: 80px;
 }
 .accordion {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
